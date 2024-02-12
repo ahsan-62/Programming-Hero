@@ -1,0 +1,22 @@
+.highlight{
+    background-color: yellow;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.more{
+    background-color: orange;
+    font-size: 20px;
+}
+
+h3{
+    color: green;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px; 
+}
