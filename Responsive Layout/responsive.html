@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <style>
+      body {
+        max-width: 1140px;
+        margin: 0 auto;
+        border: 1px solid skyblue;
+      }
+      img {
+        width: 100%;
+      }
+      .container {
+        display: flex;
+      }
+      .image {
+        width: 50%;
+      }
+      @media screen and (max-width: 576px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ol>
+        <li>d</li>
+        <li>dd</li>
+        <li>dd</li>
+        <li>ddd</li>
+        <li>dddd</li>
+        <li>ddddd</li>
+        <li>dddddd</li>
+      </ol>
+    </header>
+    <main class="container">
+      <div class="image">
+        <img
+          src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?cs=srgb&dl=pexels-ella-olsson-1640772.jpg&fm=jpg"
+          alt=""
+        />
+      </div>
+      <div class="image">
+        <img src="../images/food.jpg" alt="" />
+      </div>
+    </main>
+  </body>
+</html>
