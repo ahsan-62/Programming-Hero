@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout 2 -span</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px) 50px 50px;
+        gap: 20px;
+      }
+      .box {
+        background-color: rgb(14, 126, 224);
+      }
+
+      #box-1 {
+        grid-row: span 5;
+      }
+
+      #box-11,
+      #box-12 {
+        grid-column: span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="box" id="box-1">items - 1</div>
+        <div class="box" id="box-2">items - 2</div>
+        <div class="box" id="box-3">items - 3</div>
+        <div class="box" id="box-4">items - 4</div>
+        <div class="box" id="box-5">items - 5</div>
+        <div class="box" id="box-6">items - 6</div>
+        <div class="box" id="box-7">items - 7</div>
+        <div class="box" id="box-8">items - 8</div>
+        <div class="box" id="box-9">items - 9</div>
+        <div class="box" id="box-10">items - 10</div>
+        <div class="box" id="box-11">items - 11</div>
+        <div class="box" id="box-12">items - 12</div>
+      </div>
+    </main>
+  </body>
+</html>
