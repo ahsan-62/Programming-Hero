@@ -13,6 +13,27 @@
           left: 700px;
         }
       }
+
+      @keyframes ahsan {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          top: 400px;
+          left: 200px;
+        }
+
+        50% {
+          top: 0px;
+          left: 400px;
+        }
+
+        100% {
+          top: 400px;
+          left: 600px;
+        }
+      }
       .stage {
         height: 500px;
         width: 800px;
@@ -25,7 +46,8 @@
         background-color: brown;
         border-radius: 50%;
         position: relative;
-        animation: bounce 3s ease-in-out 2s infinite alternate;
+        /*animation: bounce 3s ease-in-out 2s infinite alternate;*/
+        animation: ahsan 2s ease-in 2s infinite alternate;
       }
     </style>
   </head>
