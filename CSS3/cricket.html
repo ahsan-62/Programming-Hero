@@ -7,6 +7,7 @@
     <style>
       .bat {
         border: 1px solid black;
+        transition: transform 1s ease-in-out;
       }
 
       .bat:hover .bat-image {
@@ -22,10 +23,11 @@
         border-radius: 50%;
         position: relative;
         left: 780px;
+        transition: transform 1s ease-out 0.1s;
       }
 
       .bat:hover .ball {
-        transform: translate(1500px);
+        transform: translate(1500px, -800px);
       }
     </style>
   </head>
