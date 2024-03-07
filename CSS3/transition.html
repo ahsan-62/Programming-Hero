@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+
+    <style>
+      .container,
+      .inner {
+        height: 300px;
+        width: 300px;
+      }
+
+      .container {
+        border: 1px solid black;
+        background-color: aqua;
+      }
+      .inner {
+        background-color: blue;
+        border: 2px solid rgb(213, 15, 15);
+        transition: ease-in-out 1s;
+      }
+      .inner:hover {
+        width: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Transform: Change the shape of an element</li>
+      <li>Transition: How long time take to Change the shape of an element</li>
+      <li>Translation: Move an element</li>
+    </ul>
+
+    <div class="container">
+      <div class="inner">Inner Box-1</div>
+    </div>
+    <div class="container">
+      <div class="inner">Inner Box-2</div>
+    </div>
+    <div class="container">
+      <div class="inner">Inner Box-3</div>
+    </div>
+  </body>
+</html>
