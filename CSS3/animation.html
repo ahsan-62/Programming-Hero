@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      @keyframes bounce {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 700px;
+        }
+      }
+      .stage {
+        height: 500px;
+        width: 800px;
+        background-color: aqua;
+      }
+
+      .ball {
+        height: 100px;
+        width: 100px;
+        background-color: brown;
+        border-radius: 50%;
+        position: relative;
+        animation: bounce 3s ease-in-out 2s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>My Bounce Ball</h2>
+
+    <div class="stage">
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>
