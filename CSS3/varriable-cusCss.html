@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Custom Variable</title>
+    <style>
+      :root {
+        --primary-color: rgb(0, 0, 0);
+        --secondary-color: blueviolet;
+      }
+      h1 {
+        color: var(--primary-color);
+      }
+
+      h5 {
+        color: var(--primary-color);
+      }
+
+      p {
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+        width: 500px;
+        border: 2px solid var(--primary-color);
+      }
+
+      .container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 200px calc(100% - 220px);
+        grid-template-rows: 300px 300px;
+      }
+
+      .sidebar {
+        background-color: antiquewhite;
+      }
+
+      .content {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Here is my website</h1>
+    <h5>Hello I am Ahsan Al Bashar</h5>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+      mollitia, fugiat soluta a illo quod ullam dolorem quae porro dicta
+      assumenda eos. A, recusandae. Eveniet ullam similique tenetur, consequatur
+      odit saepe praesentium ipsa necessitatibus provident fugiat dicta corporis
+      incidunt ex nulla corrupti quaerat animi fugit veniam a, aperiam soluta
+      veritatis.
+    </p>
+
+    <div class="container">
+      <div class="sidebar">Sidebar</div>
+      <div class="content">Main Content</div>
+    </div>
+  </body>
+</html>
